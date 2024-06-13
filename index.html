@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=256&id=11645&format=png" type="image/x-icon">
     <title>Cálculo | Regra de Três</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <h1>Calculadora de Regra de Três Simples!</h1>
+            <div class="firstLine">
+                <div class="input-container">
+                    <input type="text" id="numberA" placeholder="A" title="Primeiro número">
+                    <span id="erroA" class="erro"></span>
+                </div>
+                <p>ESTÁ PARA</p>
+                <div class="input-container">
+                    <input type="text" id="numberB" placeholder="B" title="Segundo número">
+                    <span id="erroB" class="erro"></span>
+                </div>
+            </div>
 
-            <input type="text" id="numberA" placeholder="A">
-            <p>ESTÁ PARA</p>
-            <input type="text" id="numberB" placeholder="B">
-            <p>ASSIM COMO</p>
-            <input type="text" id="numberC" placeholder="C">
-            <p>ESTÁ PARA</p>
-            <div id="resultado">X</div>
+            <div class="middleText">
+                <p>ASSIM COMO</p>
+            </div>
+
+            <div class="secondLine">
+                <div class="input-container">
+                    <input type="text" id="numberC" placeholder="C" title="Terceiro número">
+                    <span id="erroC" class="erro"></span>
+                </div>
+                <p>ESTÁ PARA</p>
+                <div id="resultado" title="Resultado">X</div>
+            </div>
             
-            <span id="mensagemErro" class="erro"></span>
-            <button onclick="calcular()">Calcular</button>
+            <button class="calcular" onclick="calcular()">CALCULAR</button>
         </div>
     </main>
 
